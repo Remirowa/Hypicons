@@ -1,4 +1,4 @@
-# Hypicons
+# :space_invader: hypicons
 Landing page selling a set of 3D neon icons
 
 - Section 1 (from <header> to '100+ Unique icons') - @Remirowa 
