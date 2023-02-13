@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="preconnect" href="//fonts.googleapis.com" crossorigin="anonymous">
+<link rel="preconnect" href="//fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i%7COpen+Sans%3A300%2C400%2C600%2C700%7CIBM+Plex+Mono%7CRoboto%3A500%2C700%7CNova+Oval%3A400%7CManrope%3A400%2C300%2C700%7CNova+Round%3A400%7CNunito%3A700%7CRoboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&display=swap">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Frontend/Projects/normalize.css">
+    <title>HypiconsPage</title>
+
+
+
+    <style>
+        < ! -- Тут начинается CSS к первому блоку,
+        потом приберу -->header {
+            display: flexbox;
+            flex-direction: column;
+            align-self: center;
+            background-image: url(https://s3-alpha-sig.figma.com/img/29a6/ac77/e983a34a87848bcab81a583fdc54e5d6?Expires=1676851200&Signature=HkPqNxGCiIJqNXCgT5SuZcQNbYDCX1vUAktVLPsGjCAUJV-xGvdFE-obsFK-gLf~heJCIpW-AQfCYg4dFiYxEokBZoRvqIwu6GOEQHO6FOfODEv9bhjo7BI~~xX6LpomGrYAa9P4iMwD6N~E5czAO0XyEbPlkC5x24Wf1dvk4G8R~t6KT-EDDIDeBo4He1QeVyCY54CNBCNlmNwRZRhskJB6jdxAGHm3aaJw9U8h2vZHwTbkth4fH6vNdVryhIwsXOcbunaJmmvUJfGSdiKuHJiAQSmpW2mU0gBq1yHhURTyyVMeGpCYgMdcHDMZ4CX1HHrcUzYOTY24UltaIOaCwQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+            width: 1440px;
+            height: 955px;
+        }
+
+        .logo {
+            margin-top: 28px;
+            margin-left: 40px;
+        }
+
+        .box_1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 46px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 29px;
+        }
+
+        .p_nav {
+
+            font-family: 'IBM Plex Mono';
+            font-size: 13px;
+            color: white;
+        }
+
+        .buy_bottom {
+            background-color: blueviolet;
+            font-family: 'IBM Plex Mono';
+            font-size: 13px;
+            text-align: center;
+            color: white;
+            height: 21px;
+            width: 91px;
+            margin-top: 26px;
+            margin-right: 15px;
+            border-radius: 200px;
+        }
+
+        .buy_bottom_big {
+            display: flexbox;
+            background-color: blueviolet;
+            font-family: 'IBM Plex Mono';
+            font-size: 13px;
+            text-align: center;
+            color: white;
+            height: 50px;
+            width: 212px;
+            margin-top: 58px;
+            margin-right: 15px;
+            border-radius: 200px;
+        }
+
+        .box_2 {
+            margin-top: 143px;
+            margin-left: 98px;
+            border: 5px;
+            border-color: crimson;
+        }
+
+        .main_text {
+            height: 95%;
+            text-align: left;
+            vertical-align: top;
+            color: white;
+            font-family: 'Manrope';
+            font-size: 48px;
+        }
+
+        .small_text {
+            height: 114%px;
+            text-align: left;
+            vertical-align: top;
+            color: white;
+            font-family: 'Manrope';
+            font-size: 16px;
+        }
+
+        .box_3 {
+            display: grid;
+            margin-top: 133px;
+            margin-right: 474px;
+            margin-left: 13px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .test {
+            margin-left: 85px;
+            display: inline;
+            height: 120;
+            width: 232;
+            height: 114%;
+            color: white;
+            font-family: 'Manrope';
+            font-size: 16px;
+        }
+
+        < ! -- Тут CSS к первому блоку заканчивается -->
+    </style>
+
+
+</head>
+
+
+<body>
+    <header>
+        <div class="box_1">
+            <div class="logo"><img style="height: 18px; width: 174px;"
+                    src="https://s3-alpha-sig.figma.com/img/5cfc/bcf7/cb0844b36f4dc9f8fd2434359b442829?Expires=1676851200&Signature=MAXZF0bc7~dWQabule9YDwth2Pwi6tVi56Odkkue-9zWLqfb~tx7Dy2IlewUTSDpFZbeEwRB31OOkCU~k7Rc6T~7zuEvrY484XntxsVNlDzm~XRTnH91dfam25FlbjWV-ZkApT67IP-yHgcIn-Zi48pG0l9MrS~hIt6r7plaagGPX3~Bzge9O4YR7hKle2NQ4p4QDZs5qxFdjIW6i86zP2xy1zT5h5l7mV4yWvtnR3XdhlR2I3QfamGLHjccpwBqY0AOxvo-~xjjG3L8mXy1ITiX16fpJPUse1tc~BhGHWMLOKtFisYp~s2nlbx-DScvc-UO3OtY2QNHRB9yfdU2GA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+            </div>
+            <div class="nav">
+                <div class="p_nav">Intro</div>
+                <div class="p_nav">What’s Included?</div>
+                <div class="p_nav">Icon request</div>
+            </div>
+            <div class="buy_bottom">Buy Now</div>
+        </div>
+        <div class="box_2">
+            <div class="small_text">Custom icon pack</div>
+            <div class="main_text">A wildly over the top, neon <br> themed icon pack for your<br>device customisation.
+            </div>
+            <div class="buy_bottom_big">Buy Now</div>
+
+        </div>
+        <div class="box_3">
+            <div class="test">3D rendered icons <br> Not a flat vector graphic in sight – this pack has been
+                meticulously crafted in shiny 3D beauty.</div>
+            <div class="test">High definition <br> Each icon has been rendered at 2048px, ludicrously large for an icon
+                but it's just nice to see the details sometimes.</div>
+            <div class="test">Over 100 icons included <br> Included in this pack are over 100 icons of the most commonly
+                used apps and utilities.</div>
+        </div>
+    </header>
+
+
+
+
+</body>
+
+
+</html>
