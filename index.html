@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HypiconsPage</title>
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="preconnect" href="//fonts.googleapis.com" crossorigin="anonymous">
@@ -16,171 +19,559 @@
 
 
     <style>
-        html,
         body {
-            height: 100%;
-        }
-
-        html {
-            display: table;
-            margin: auto;
-        }
-
-        body {
-            display: table-cell;
-            vertical-align: middle;
+            background-color: black;
         }
 
         header {
-            flex-direction: column;
-            align-self: center;
+            display: grid;
+            background-size: cover;
             background-image: url(https://s3-alpha-sig.figma.com/img/29a6/ac77/e983a34a87848bcab81a583fdc54e5d6?Expires=1676851200&Signature=HkPqNxGCiIJqNXCgT5SuZcQNbYDCX1vUAktVLPsGjCAUJV-xGvdFE-obsFK-gLf~heJCIpW-AQfCYg4dFiYxEokBZoRvqIwu6GOEQHO6FOfODEv9bhjo7BI~~xX6LpomGrYAa9P4iMwD6N~E5czAO0XyEbPlkC5x24Wf1dvk4G8R~t6KT-EDDIDeBo4He1QeVyCY54CNBCNlmNwRZRhskJB6jdxAGHm3aaJw9U8h2vZHwTbkth4fH6vNdVryhIwsXOcbunaJmmvUJfGSdiKuHJiAQSmpW2mU0gBq1yHhURTyyVMeGpCYgMdcHDMZ4CX1HHrcUzYOTY24UltaIOaCwQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
-            width: 1440px;
-            height: 955px;
+            color: white;
+            font-family: 'Manrope';
+            padding: 2vh 2vw;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 4vh 45vh 45vh;
+
         }
 
-        .logo {
-            margin-top: 28px;
-            margin-left: 40px;
+        .section_1 {
+            display: grid;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: 'Manrope';
+            padding: 5vh 2vw;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100vh;
         }
 
-        .box_1 {
+        .cell {
+            padding: 1%;
+        }
+
+        .cell-2 {
+            grid-column: 2/4;
             display: flex;
-            justify-content: space-between;
-            width: 100%;
-            height: 46px;
+            justify-content: space-around;
         }
 
-        .nav {
-            display: flex;
-            width: 25%;
-            justify-content: space-between;
-            margin-top: 29px;
+        .cell-3 {
+            display: grid;
+            justify-content: end;
+            padding: 3%;
+        }
+
+        .cell-4 {
+            grid-column: 1/5;
+            padding: 10vh 50% 0vh 4vw;
+            font-family: 'Manrope';
+        }
+
+        .cell-5 {
+            padding: 10vh 6vw 0vh 4vw;
         }
 
         .p_nav {
             font-family: 'IBM Plex Mono';
             font-size: 13px;
-            color: white;
         }
 
-        .buy_bottom {
+        .button {
+            display: flex;
             background-color: blueviolet;
             font-family: 'IBM Plex Mono';
             font-size: 13px;
             text-align: center;
             color: white;
-            height: 21px;
-            width: 91px;
-            margin-top: 26px;
-            margin-right: 15px;
+            align-items: center;
+            justify-content: center;
             border-radius: 200px;
         }
 
-        .buy_bottom_big {
-            display: flex;
-            background-color: blueviolet;
-            font-family: 'IBM Plex Mono';
-            font-size: 13px;
-            color: white;
-            height: 50px;
-            width: 212px;
-            margin-top: 58px;
-            margin-right: 15px;
-            border-radius: 200px;
+        .text_block {
+            padding: 25vh 20% 0vh 4vw;
+        }
+
+
+        .icons_pic {
+            display: grid;
+            grid-column: 1/3;
             align-items: center;
             justify-content: center;
         }
 
 
-        .box_2 {
-            margin-top: 143px;
-            margin-left: 98px;
+        #text-1 {
+            font-size: 2vh;
+            margin-left: 2vw;
+            margin-top: 3vh;
         }
 
-        .main_text {
-            height: 95%;
-            text-align: left;
-            vertical-align: top;
-            color: white;
+        #text-2 {
+            font-size: 5vh;
+        }
+
+        #button-1 {
+            height: 21px;
+            width: 91px;
+        }
+
+        #button-2 {
+            margin-top: 5vh;
+            height: 50px;
+            width: 212px;
+        }
+
+        h3 {
+            text-align: center;
+
+            height: 40px;
+            left: 42.42%;
+            right: 42.34%;
+            top: 1316.22px;
+
             font-family: 'Manrope';
-            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 29px;
+            line-height: 40px;
+            /* identical to box height, or 138% */
+
+            text-align: center;
+            text-transform: capitalize;
+
+            color: #FFFFFF;
         }
 
-        .small_text {
-            height: 114%;
-            text-align: left;
-            vertical-align: top;
-            color: white;
+        .container_section3 {
+
+            height: auto;
+            width: 100vw;
+            left: 40.03%;
+            right: 40.19%;
+            top: 461.95px;
             font-family: 'Manrope';
-            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 22px;
+            text-align: center;
+
+
         }
 
-        .box_3 {
-            display: grid;
-            margin-top: 133px;
-            margin-right: 474px;
-            margin-left: 13px;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .test {
-            margin-left: 85px;
-            display: inline;
-            height: 120px;
-            width: 232px;
-            height: 114%;
-            color: white;
-            font-family: 'Manrope';
-            font-size: 16px;
+        .img_section3 {
+            display: flex;
+            background-color: black;
+            max-width: 100%;
+            height: auto;
         }
     </style>
 
 </head>
 
-
 <body>
     <header>
-        <div class="box_1">
-            <div class="logo"><img alt="background-image" style="height: 18px; width: 174px;"
-                    src="https://s3-alpha-sig.figma.com/img/5cfc/bcf7/cb0844b36f4dc9f8fd2434359b442829?Expires=1676851200&Signature=MAXZF0bc7~dWQabule9YDwth2Pwi6tVi56Odkkue-9zWLqfb~tx7Dy2IlewUTSDpFZbeEwRB31OOkCU~k7Rc6T~7zuEvrY484XntxsVNlDzm~XRTnH91dfam25FlbjWV-ZkApT67IP-yHgcIn-Zi48pG0l9MrS~hIt6r7plaagGPX3~Bzge9O4YR7hKle2NQ4p4QDZs5qxFdjIW6i86zP2xy1zT5h5l7mV4yWvtnR3XdhlR2I3QfamGLHjccpwBqY0AOxvo-~xjjG3L8mXy1ITiX16fpJPUse1tc~BhGHWMLOKtFisYp~s2nlbx-DScvc-UO3OtY2QNHRB9yfdU2GA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-            </div>
-            <div class="nav">
-                <div class="p_nav">Intro</div>
-                <div class="p_nav">What’s Included?</div>
-                <div class="p_nav">Icon request</div>
-            </div>
-            <div class="buy_bottom">Buy Now</div>
+        <div class="cell cell-1"><img alt="background-image" style="height: 18px; width: 174px;"
+                src="https://s3-alpha-sig.figma.com/img/5cfc/bcf7/cb0844b36f4dc9f8fd2434359b442829?Expires=1676851200&Signature=MAXZF0bc7~dWQabule9YDwth2Pwi6tVi56Odkkue-9zWLqfb~tx7Dy2IlewUTSDpFZbeEwRB31OOkCU~k7Rc6T~7zuEvrY484XntxsVNlDzm~XRTnH91dfam25FlbjWV-ZkApT67IP-yHgcIn-Zi48pG0l9MrS~hIt6r7plaagGPX3~Bzge9O4YR7hKle2NQ4p4QDZs5qxFdjIW6i86zP2xy1zT5h5l7mV4yWvtnR3XdhlR2I3QfamGLHjccpwBqY0AOxvo-~xjjG3L8mXy1ITiX16fpJPUse1tc~BhGHWMLOKtFisYp~s2nlbx-DScvc-UO3OtY2QNHRB9yfdU2GA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
         </div>
-        <div class="box_2">
-            <div class="small_text">Custom icon pack</div>
-            <div class="main_text">A wildly over the top, neon <br> themed icon pack for your<br>device customisation.
-            </div>
-            <div class="buy_bottom_big">Buy now - $14.99
-            </div>
-
+        <div class="cell cell-2">
+            <div class="p_nav">Intro</div>
+            <div class="p_nav">What’s Included?</div>
+            <div class="p_nav">Icon request</div>
         </div>
-        <div class="box_3">
-            <div class="test">3D rendered icons
-                <p style="color: #FFFFFF65;"> Not a flat vector graphic in sight – this pack has been
-                    meticulously
-                    crafted in shiny 3D beauty.</p>
+        <div class="cell cell-3">
+            <div class="button" id="button-1">Buy Now</div>
+        </div>
+        <div class="cell cell-4">
+            <div class="text-1">Custom icon pack</div>
+            <div class="text-2">A wildly over the top, neon <br> themed icon pack for your<br>device customisation.
             </div>
-            <div class="test">High definition
-                <p style="color: #FFFFFF65;"> Each icon has been rendered at 2048px, ludicrously large for an
-                    icon
-                    but it's just nice to see the details sometimes.</p>
-            </div>
-            <div class="test">Over 100 icons included
-                <p style="color: #FFFFFF65;">Included in this pack are over 100 icons of the most
-                    commonly
-                    used apps and utilities.</p>
-            </div>
+            <div class="button" id="button-2">Buy now - $14.99</div>
+        </div>
+        <div class="cell cell-5">3D rendered icons<br>
+            <p style="color: #FFFFFF65;">Not a flat vector graphic in sight – this pack has been meticulously crafted in
+                shiny 3D beauty.</p>
+        </div>
+        <div class="cell cell-5">High definition<br>
+            <p style="color: #FFFFFF65;">Each icon has been rendered at 2048px, ludicrously large for an icon but it's
+                just
+                nice to see the details sometimes.</p>
+        </div>
+        <div class="cell cell-5">Over 100 icons included<br>
+            <p style="color: #FFFFFF65;">Included in this pack are over 100 icons of the most commonly used apps and
+                utilities.</p>
         </div>
     </header>
+    <section class="section_1">
+        <div class="text_block">
+            <div id="text-2">100+ Unique icons
+            </div>
+            <div id="text-1">Over 100 of the most commonly use app icons<br>Optimised for iOS with solid
+                black backgrounds<br>Transparent PNG versions to do what you like with
+                <br>Mac OS optimised versions<br>Access to any future additions or updates<br>Installation instructions
+                included
+            </div>
+            <div class="button" id="button-2">Buy now - $14.99</div>
+        </div>
+        </div class="phone_img"><img width="500px"
+            src="https://www.figma.com/file/eB1B548GYQ9wNcr1bDWiPd/image/d2f4c635594d7699019361559ac124c38d239b54?fuid=1181922354957269201">
+        </div>
+        <div class="icons_pic">
+            <p align="center">3D rendered icons</p><img width="
+            1215px"
+                src="https://s3-alpha-sig.figma.com/img/ea26/8c59/0d5fe98205105edf94656638646538ad?Expires=1677456000&Signature=nc2il6vgKgh0PeU1sYPfQFqsnhId~3DJmEz-fN~0MAOOW-IjjhkhKUkprk-yGdka9wdAhiatZbu2k4XwiWaDr9duGfME0tpbP79FOse5XqPFs1z2PO9lIDoEiVUPzAfw9RxBoeL6am9Ba7FHhk6IXqYk5d~U5Zg9Vaxr3RNiZt6hXQ1Nv9N1iz4Gara5l6HwAuVDz1jaZJAyfjGSKmmUGO0gpZyd7KbfphKaMjHqPfNc04oCEZ2MXF8esKsvU7SBC5apTt6tF1xcM~dq3tTqdfac7E3oYv5NFZ6VOpRGUnxc9iPi7Hrs2uX~kv~vvIhscOgxZETAmybItKMXnqZYZg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt="icons_image">
+        </div>
+    </section>
 
 
+    <section class="section_3">
+        <h3>Big Sur Ready</h3>
+        <img class="img_section3"
+            src="https://s3-alpha-sig.figma.com/img/2ac4/6a81/13688dbc39e645dffa35bed081969bf6?Expires=1677456000&Signature=LOKII18QVQ4xfL4PY4z4yFA1stnjK82fgDZPkfvy6CTab8GHtJ7ORbqdzZQE-izXFfmE~NRC9WwRqZosorAxMgchYuEqz6QLO80jK7o4c7qajPsEsearqEzRwwnd0UHEkjZkuMXjqYdGmbPKlqICyxQ9rGfq4~nms-74m~VP2NuSSa76PPomGpFhUMS9AD8loRkDd-gcLzmo7CVsQBJ4704bAZaZ73vyGzGjzmrJVuLRHW1l~tEfCe22yJYsbZGEQbQQ-VQY2OWNjT-tB4FK3IPtYy8KkZaqUkJmY6zHnqHSO1nYl0nnXOYzfm~YG1rXgTo7emssN7fpTfSCm7LQ5w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt="rectangle">
+        <div class="container_section3">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Health & Fitness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Adidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Activity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Covid-19</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Fitbit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Nike</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Peloton</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Sleep</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Strava</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">MyFitnessPal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Weights</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Social Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Behance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Bumble</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Discord</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Dribbble</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Flickr</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Google Hangouts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Linkedin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Meetup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Messenger</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Pinterest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Quora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Reddit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Skype</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Slack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Snapchat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Telegram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">TikTok</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Tinder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Tumblr</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Twitch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Vimeo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">VK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Whatsapp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Youtube</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Zoom</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">General</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Airbnb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Cash App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Chrome</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Deliveroo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Dropbox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Ebay</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Figma</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Gmail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Google Drive</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Google Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Gumtree</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Invision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Lyft</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Monzo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Notion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Paypal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Uber</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">VSCO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Alexa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Amazon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Apple (TV)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Channel 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Crunchyroll</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Disney Plus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Google Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Google Play</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Hulu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Netflix</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Oculus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Playstation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Shazam</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Sky</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Soundcloud</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Spotify</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Apple Utilities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Calendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Camera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Clock</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Facetime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Find my phone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Flashlight</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Health</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">iMovie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Keynote</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Mail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Maps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Numbers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Phone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Podcasts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Remote</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Safari</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Shortcuts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Stopwatch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white" href="#">Weather</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="section_4" style="color: aqua;">
+        тут будет футер
+    </section>
 
 </body>
 
