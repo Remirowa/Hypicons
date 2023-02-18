@@ -147,15 +147,20 @@ footer {
     padding: 2vh 2vw;
     margin-top: 10vh;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40vh 40vh 20vh;
+    grid-template-rows: 65vh 40vh 20vh;
 
 }
 
 .cell-6 {
     display: flex;
-    width: 100%;
+    padding: 0vh 10vw 0vh 10vw;
     justify-content: center;
+}
 
+
+.image_container img {
+    width: 90%;
+    height: auto;
 }
 
 .cell-8 {
@@ -166,7 +171,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding-top: 5vh;
-    background-image: url(https://s3-alpha-sig.figma.com/img/08b6/0be5/babc3af13e8a1482a6da228009c9d123?Expires=1677456000&Signature=bjxB2JRUEh9VvYrIWtwkE93~Djc2ZKAxQ69UNbuTGwS6cZoer0cJ-CyVPH88opWibWIqj23-gi0ZpDaO1ljmuP-3~D6QvUy7jaF2cPBJkSIseQSync49dPe4~0vZAL2uJ1MjBWSmjbsKmB3TcXnbdkXQQGOwD5hyru-k~VveBtEwGe-3~uB0Kpqh9mC-qqi6DSgqUS7TyBbD7Zz3xdGMHEHaz8Lx6wGpZXG0zI-7gd7RlFjcOtlbNDNYnK8sbSls53-x1YjSI5j8rwBGj~Twon5jRDk~PygY61kbWSn7ejL1vTxSWwtRKhxnhsw8kbPr7p7fTT6INwnC~J93EhMuXw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-image: url(/images/6pic.jfif);
     background-size: cover;
     background-position: center;
 
