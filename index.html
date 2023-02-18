@@ -16,7 +16,7 @@
     <link rel="preconnect" href="//fonts.gstatic.com" crossorigin="anonymous">
     <link rel="stylesheet"
         href="//fonts.googleapis.com/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i%7COpen+Sans%3A300%2C400%2C600%2C700%7CIBM+Plex+Mono%7CRoboto%3A500%2C700%7CNova+Oval%3A400%7CManrope%3A400%2C300%2C700%7CNova+Round%3A400%7CNunito%3A700%7CRoboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&display=swap">
-
+    <link type="text/css" rel="stylesheet" href="normalize.css" />
 
     <style>
         body {
@@ -35,13 +35,16 @@
 
         }
 
-        .section_1 {
+        .section_2 {
             display: grid;
             background-color: rgb(0, 0, 0);
             color: white;
             font-family: 'Manrope';
-            padding: 5vh 2vw;
-            grid-template-columns: 50% 50%;
+            margin-top: 6vh;
+            margin-bottom: 10vh;
+            padding-left: 3vw;
+            padding-right: 3vw;
+            grid-template-columns: 55% 45%;
             grid-template-rows: 100vh;
         }
 
@@ -71,17 +74,20 @@
             padding: 10vh 6vw 0vh 4vw;
         }
 
+        .cell-6 {
+            padding: 5%;
+        }
+
         .p_nav {
             font-family: 'IBM Plex Mono';
-            font-size: 13px;
+            font-size: 1.5vh;
         }
 
         .button {
             display: flex;
             background-color: blueviolet;
             font-family: 'IBM Plex Mono';
-            font-size: 13px;
-            text-align: center;
+            font-size: 1.5vh;
             color: white;
             align-items: center;
             justify-content: center;
@@ -96,15 +102,18 @@
         .icons_pic {
             display: grid;
             grid-column: 1/3;
-            align-items: center;
             justify-content: center;
+            padding-top: 5vh;
+            text-align: center;
+        }
+
+        #stupid_pic {
+            padding-left: 10%;
         }
 
 
         #text-1 {
             font-size: 2vh;
-            margin-left: 2vw;
-            margin-top: 3vh;
         }
 
         #text-2 {
@@ -122,49 +131,84 @@
             width: 212px;
         }
 
-        h3 {
-            text-align: center;
-
-            height: 40px;
-            left: 42.42%;
-            right: 42.34%;
-            top: 1316.22px;
-
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 29px;
-            line-height: 40px;
-            /* identical to box height, or 138% */
-
-            text-align: center;
-            text-transform: capitalize;
-
-            color: #FFFFFF;
+        #line_pic {
+            margin-top: 3vh;
+            margin-bottom: 5vh;
         }
+
+        .section_3 {
+            width: 100%;
+            text-align: center;
+        }
+
+
+        h3 {
+            font-size: 3vh;
+            color: white;
+            font-family: 'Manrope';
+        }
+
 
         .container_section3 {
-
-            height: auto;
-            width: 100vw;
-            left: 40.03%;
-            right: 40.19%;
-            top: 461.95px;
+            width: 100%;
+            padding-left: 15%;
+            padding-right: 15%;
+            align-content: center;
             font-family: 'Manrope';
             font-style: normal;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 22px;
-            text-align: center;
+            font-size: 1.5vh;
+            line-height: 2.5vh;
+        }
 
+        footer {
+            display: grid;
+            background-color: black;
+            color: white;
+
+            padding: 2vh 2vw;
+            margin-top: 10vh;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 40vh 40vh 20vh;
 
         }
 
-        .img_section3 {
+        .cell-6 {
             display: flex;
-            background-color: black;
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            justify-content: center;
+
+        }
+
+        .cell-8 {
+            grid-column: 1/3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 5vh;
+            background-image: url(https://s3-alpha-sig.figma.com/img/08b6/0be5/babc3af13e8a1482a6da228009c9d123?Expires=1677456000&Signature=bjxB2JRUEh9VvYrIWtwkE93~Djc2ZKAxQ69UNbuTGwS6cZoer0cJ-CyVPH88opWibWIqj23-gi0ZpDaO1ljmuP-3~D6QvUy7jaF2cPBJkSIseQSync49dPe4~0vZAL2uJ1MjBWSmjbsKmB3TcXnbdkXQQGOwD5hyru-k~VveBtEwGe-3~uB0Kpqh9mC-qqi6DSgqUS7TyBbD7Zz3xdGMHEHaz8Lx6wGpZXG0zI-7gd7RlFjcOtlbNDNYnK8sbSls53-x1YjSI5j8rwBGj~Twon5jRDk~PygY61kbWSn7ejL1vTxSWwtRKhxnhsw8kbPr7p7fTT6INwnC~J93EhMuXw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .cell-9 {
+            display: grid;
+            grid-column: 1/3;
+            text-align: center;
+            padding-top: 7vh;
+        }
+
+        .phone_img {
+            display: flex;
+            justify-content: right;
+        }
+
+        .cell-7-text {
+            display: block;
+            margin-top: 7vh;
+            width: 72%;
         }
     </style>
 
@@ -172,22 +216,22 @@
 
 <body>
     <header>
-        <div class="cell cell-1"><img alt="background-image" style="height: 18px; width: 174px;"
+        <div class="cell cell-1"><img alt="background-image" style="width: 10vw;"
                 src="https://s3-alpha-sig.figma.com/img/5cfc/bcf7/cb0844b36f4dc9f8fd2434359b442829?Expires=1676851200&Signature=MAXZF0bc7~dWQabule9YDwth2Pwi6tVi56Odkkue-9zWLqfb~tx7Dy2IlewUTSDpFZbeEwRB31OOkCU~k7Rc6T~7zuEvrY484XntxsVNlDzm~XRTnH91dfam25FlbjWV-ZkApT67IP-yHgcIn-Zi48pG0l9MrS~hIt6r7plaagGPX3~Bzge9O4YR7hKle2NQ4p4QDZs5qxFdjIW6i86zP2xy1zT5h5l7mV4yWvtnR3XdhlR2I3QfamGLHjccpwBqY0AOxvo-~xjjG3L8mXy1ITiX16fpJPUse1tc~BhGHWMLOKtFisYp~s2nlbx-DScvc-UO3OtY2QNHRB9yfdU2GA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
         </div>
         <div class="cell cell-2">
-            <div class="p_nav">Intro</div>
-            <div class="p_nav">What’s Included?</div>
-            <div class="p_nav">Icon request</div>
+            <div class="p_nav"><a href="#" style="color: white;">Intro</a></div>
+            <div class="p_nav"><a href="#" style="color: white;">What’s Included?</a></div>
+            <div class="p_nav"><a href="#" style="color: white;">Icon request</a></div>
         </div>
         <div class="cell cell-3">
-            <div class="button" id="button-1">Buy Now</div>
+            <div class="button" id="button-1"><a href="#" style="color: white;">Buy Now</a></div>
         </div>
         <div class="cell cell-4">
-            <div class="text-1">Custom icon pack</div>
-            <div class="text-2">A wildly over the top, neon <br> themed icon pack for your<br>device customisation.
+            <div id="text-1">Custom icon pack</div>
+            <div id="text-2">A wildly over the top, neon <br> themed icon pack for your<br>device customisation.
             </div>
-            <div class="button" id="button-2">Buy now - $14.99</div>
+            <div class="button" id="button-2"><a href="#" style="color: white;">Buy now - $14.99</a></div>
         </div>
         <div class="cell cell-5">3D rendered icons<br>
             <p style="color: #FFFFFF65;">Not a flat vector graphic in sight – this pack has been meticulously crafted in
@@ -203,23 +247,24 @@
                 utilities.</p>
         </div>
     </header>
-    <section class="section_1">
+
+
+    <section class="section_2">
         <div class="text_block">
             <div id="text-2">100+ Unique icons
-            </div>
+            </div><br>
             <div id="text-1">Over 100 of the most commonly use app icons<br>Optimised for iOS with solid
                 black backgrounds<br>Transparent PNG versions to do what you like with
                 <br>Mac OS optimised versions<br>Access to any future additions or updates<br>Installation instructions
                 included
             </div>
-            <div class="button" id="button-2">Buy now - $14.99</div>
-        </div>
-        </div class="phone_img"><img width="500px"
+            <div class="button" id="button-2"><a href="#" style="color: white;">Buy now - $14.99</a></div>
+        </div class="phone_img"><img height="100%"
             src="https://www.figma.com/file/eB1B548GYQ9wNcr1bDWiPd/image/d2f4c635594d7699019361559ac124c38d239b54?fuid=1181922354957269201">
         </div>
         <div class="icons_pic">
-            <p align="center">3D rendered icons</p><img width="
-            1215px"
+            <h3>3D rendered icons</h3>
+            <img id="stupid_pic" width="90%"
                 src="https://s3-alpha-sig.figma.com/img/ea26/8c59/0d5fe98205105edf94656638646538ad?Expires=1677456000&Signature=nc2il6vgKgh0PeU1sYPfQFqsnhId~3DJmEz-fN~0MAOOW-IjjhkhKUkprk-yGdka9wdAhiatZbu2k4XwiWaDr9duGfME0tpbP79FOse5XqPFs1z2PO9lIDoEiVUPzAfw9RxBoeL6am9Ba7FHhk6IXqYk5d~U5Zg9Vaxr3RNiZt6hXQ1Nv9N1iz4Gara5l6HwAuVDz1jaZJAyfjGSKmmUGO0gpZyd7KbfphKaMjHqPfNc04oCEZ2MXF8esKsvU7SBC5apTt6tF1xcM~dq3tTqdfac7E3oYv5NFZ6VOpRGUnxc9iPi7Hrs2uX~kv~vvIhscOgxZETAmybItKMXnqZYZg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt="icons_image">
         </div>
@@ -228,7 +273,7 @@
 
     <section class="section_3">
         <h3>Big Sur Ready</h3>
-        <img class="img_section3"
+        <img id="line_pic" width="90%"
             src="https://s3-alpha-sig.figma.com/img/2ac4/6a81/13688dbc39e645dffa35bed081969bf6?Expires=1677456000&Signature=LOKII18QVQ4xfL4PY4z4yFA1stnjK82fgDZPkfvy6CTab8GHtJ7ORbqdzZQE-izXFfmE~NRC9WwRqZosorAxMgchYuEqz6QLO80jK7o4c7qajPsEsearqEzRwwnd0UHEkjZkuMXjqYdGmbPKlqICyxQ9rGfq4~nms-74m~VP2NuSSa76PPomGpFhUMS9AD8loRkDd-gcLzmo7CVsQBJ4704bAZaZ73vyGzGjzmrJVuLRHW1l~tEfCe22yJYsbZGEQbQQ-VQY2OWNjT-tB4FK3IPtYy8KkZaqUkJmY6zHnqHSO1nYl0nnXOYzfm~YG1rXgTo7emssN7fpTfSCm7LQ5w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
             alt="rectangle">
         <div class="container_section3">
@@ -570,7 +615,43 @@
     </section>
 
     <section class="section_4" style="color: aqua;">
-        тут будет футер
+        <footer>
+            <div class="cell-6"><img width="40%"
+                    src="https://s3-alpha-sig.figma.com/img/a1fc/8dc6/a988e175897b2d75b0e190055acebaf7?Expires=1677456000&Signature=P8EZrFyC~RtbfS2XXvlT-9R1K38UxpON2Tkzru-4IgsKSOsyLvyME6TKfKcMhLdvNPf1SjdFnQ7r7vb~ilcW3JVCQ-6dtwVIL3oU0sirN34GXYHhMe0ECXWsERpxON0yPSLhIjov7KigW9vtjkGPH4u~JxkcDUUTe39jY95CWecvLUjuVXBcuVI9omn7Upk~43s2IN09xqRS8XmLjvXijQUytNlFcbAeIV-1BNnaivlfCw35SgpCgt5EOv6O8bwUdrHwIzFYOlwpG-XIPrjEG4jUmuHXMRpZvGWK05OwWuOP81Z4A1J4rL6SCNrprmshQGPKQte4OOjbRdb26kNtQA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="a"></div>
+            <div class="cell-7">
+                <div class="cell-7-text">
+                    <div id="text-2">
+                        Icon request</div></br>
+                    <div id="text-1">If you find that the pack is missing
+                        any icons, feel free to send me a message and I will do my best to create one. Purchasing the
+                        pack
+                        will
+                        give you access to any future updates.</div>
+                    <div class="button" id="button-2"><a href="#" style="color: white;">Get in touch</a></div>
+                </div>
+            </div>
+            <div class="cell-8">
+                <div id="text-1">
+                    <p style="font-size: 4vh; font-family: 'Manrope'; ">Grab the pack</p>
+                </div>
+                <div id="text-1">By purchasing the pack you will get access to future additions and updates – for
+                    life!
+                </div>
+                <div class="button" id="button-2"><a href="#" style="color: white;">Buy now - $14.99</a></div>
+            </div>
+            <div class="cell-9">
+                <div>
+                    <img alt="background-image" style="width: 8vw;"
+                        src="https://s3-alpha-sig.figma.com/img/5cfc/bcf7/cb0844b36f4dc9f8fd2434359b442829?Expires=1676851200&Signature=MAXZF0bc7~dWQabule9YDwth2Pwi6tVi56Odkkue-9zWLqfb~tx7Dy2IlewUTSDpFZbeEwRB31OOkCU~k7Rc6T~7zuEvrY484XntxsVNlDzm~XRTnH91dfam25FlbjWV-ZkApT67IP-yHgcIn-Zi48pG0l9MrS~hIt6r7plaagGPX3~Bzge9O4YR7hKle2NQ4p4QDZs5qxFdjIW6i86zP2xy1zT5h5l7mV4yWvtnR3XdhlR2I3QfamGLHjccpwBqY0AOxvo-~xjjG3L8mXy1ITiX16fpJPUse1tc~BhGHWMLOKtFisYp~s2nlbx-DScvc-UO3OtY2QNHRB9yfdU2GA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                </div></br>
+                <p style="font-size: 70%;">Created by <a href="#" style="color: #9400FF;">@rathniley</a></p>
+                <div>
+                    </br>
+                    <p style="font-size: 1vh;">Copyright © 2020. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </section>
 
 </body>
