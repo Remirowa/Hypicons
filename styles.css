@@ -1,0 +1,191 @@
+body {
+    background-color: black;
+}
+
+header {
+    display: grid;
+    background-size: cover;
+    background-image: url(https://s3-alpha-sig.figma.com/img/29a6/ac77/e983a34a87848bcab81a583fdc54e5d6?Expires=1676851200&Signature=HkPqNxGCiIJqNXCgT5SuZcQNbYDCX1vUAktVLPsGjCAUJV-xGvdFE-obsFK-gLf~heJCIpW-AQfCYg4dFiYxEokBZoRvqIwu6GOEQHO6FOfODEv9bhjo7BI~~xX6LpomGrYAa9P4iMwD6N~E5czAO0XyEbPlkC5x24Wf1dvk4G8R~t6KT-EDDIDeBo4He1QeVyCY54CNBCNlmNwRZRhskJB6jdxAGHm3aaJw9U8h2vZHwTbkth4fH6vNdVryhIwsXOcbunaJmmvUJfGSdiKuHJiAQSmpW2mU0gBq1yHhURTyyVMeGpCYgMdcHDMZ4CX1HHrcUzYOTY24UltaIOaCwQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    color: white;
+    font-family: 'Manrope';
+    padding: 2vh 2vw;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 4vh 45vh 45vh;
+
+}
+
+.section_2 {
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Manrope';
+    margin-top: 6vh;
+    margin-bottom: 10vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100vh;
+}
+
+.cell {
+    padding: 1%;
+}
+
+.cell-2 {
+    grid-column: 2/4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cell-3 {
+    display: grid;
+    justify-content: end;
+    padding: 3%;
+}
+
+.cell-4 {
+    grid-column: 1/5;
+    padding: 10vh 50% 0vh 4vw;
+    font-family: 'Manrope';
+}
+
+.cell-5 {
+    padding: 10vh 6vw 0vh 4vw;
+}
+
+.cell-6 {
+    padding: 5%;
+}
+
+.p_nav {
+    font-family: 'IBM Plex Mono';
+    font-size: 1.5vh;
+}
+
+.button {
+    display: flex;
+    background-color: blueviolet;
+    font-family: 'IBM Plex Mono';
+    font-size: 1.5vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+}
+
+.text_block {
+    padding: 25vh 20% 0vh 4vw;
+}
+
+
+.icons_pic {
+    display: grid;
+    grid-column: 1/3;
+    justify-content: center;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+#stupid_pic {
+    padding-left: 10%;
+}
+
+
+.text-1 {
+    font-size: 2vh;
+}
+
+.text-2 {
+    font-size: 5vh;
+}
+
+#button-1 {
+    height: 21px;
+    width: 91px;
+}
+
+#button-2 {
+    margin-top: 5vh;
+    height: 50px;
+    width: 212px;
+}
+
+#line_pic {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+.section_3 {
+    width: 100%;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 3vh;
+    color: white;
+    font-family: 'Manrope';
+}
+
+
+.container_section3 {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-content: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 1.5vh;
+    line-height: 2.5vh;
+}
+
+footer {
+    display: grid;
+    background-color: black;
+    color: white;
+
+    padding: 2vh 2vw;
+    margin-top: 10vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40vh 40vh 20vh;
+
+}
+
+.cell-6 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.cell-8 {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5vh;
+    background-image: url(https://s3-alpha-sig.figma.com/img/08b6/0be5/babc3af13e8a1482a6da228009c9d123?Expires=1677456000&Signature=bjxB2JRUEh9VvYrIWtwkE93~Djc2ZKAxQ69UNbuTGwS6cZoer0cJ-CyVPH88opWibWIqj23-gi0ZpDaO1ljmuP-3~D6QvUy7jaF2cPBJkSIseQSync49dPe4~0vZAL2uJ1MjBWSmjbsKmB3TcXnbdkXQQGOwD5hyru-k~VveBtEwGe-3~uB0Kpqh9mC-qqi6DSgqUS7TyBbD7Zz3xdGMHEHaz8Lx6wGpZXG0zI-7gd7RlFjcOtlbNDNYnK8sbSls53-x1YjSI5j8rwBGj~Twon5jRDk~PygY61kbWSn7ejL1vTxSWwtRKhxnhsw8kbPr7p7fTT6INwnC~J93EhMuXw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.cell-9 {
+    display: grid;
+    grid-column: 1/3;
+    text-align: center;
+    padding-top: 7vh;
+}
+
+.phone_img {
+    display: flex;
+    justify-content: right;
+}
+
+.cell-7-text {
+    display: block;
+    margin-top: 7vh;
+    width: 72%;
+}
